@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
-
+const router = express.Router();
 const app = express();
 
 
@@ -20,7 +20,7 @@ db.connect((err) => {
   console.log('Connected to MySQL');
 });
 
-app.post('/register', (req, res) => {
+router.post('/register', (req, res) => {
   const { username, password } = req.body;
     const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
     const values = [username, password];
