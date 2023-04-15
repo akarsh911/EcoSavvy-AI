@@ -19,7 +19,7 @@ router.get('/', function (req, res) {
   res.send('GET route on login.');
 });
 router.post('/', function (req, res) {
-  console.log(req.body);
+
   username = req.body.username;
   password = req.body.password;
   const sql = 'SELECT * FROM users WHERE username = ?';
@@ -29,8 +29,8 @@ router.post('/', function (req, res) {
     if (result.length === 0) {
       res.status(401).json({ error: 'Invalid username or password' });
     } else {
-      if (flag) {
-        res.status(200).json({ message: 'Login successful' });
+
+      if (result[0].password == password) {
         res.redirect('/dashboard');
       } else {
         res.status(401).json({ error: 'Invalid username or password' });
