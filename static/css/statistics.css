@@ -11,6 +11,11 @@ body {
     margin: 5em auto 2em;
 }
 
+.subdad {
+    width: 100vw;
+    display: flex;
+}
+
 .desktop__title {
     background: linear-gradient(to bottom, #eee, #e5e5e5);
     padding: 8px 8px 0;
