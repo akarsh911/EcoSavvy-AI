@@ -1,7 +1,6 @@
 body {
     display: block;
     margin: 0px;
-
 }
 
 .top_bar {
@@ -22,7 +21,6 @@ body {
     z-index: 5;
     display: flex;
     justify-content: space-between;
-
 }
 
 .logo_img {
@@ -55,7 +53,6 @@ body {
 }
 
 .community_btn {
-
     border: #106409;
     font-weight: bold;
     font-size: 16px;
@@ -78,7 +75,6 @@ body {
 }
 
 .stock_btn {
-
     border: #636804;
     font-weight: bold;
     font-size: 16px;
@@ -106,8 +102,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around;
-
-
 }
 
 h1 {
@@ -141,7 +135,6 @@ h1 {
 
 .community_btn:hover {
     background-color: #000000;
-
     color: aliceblue;
     border: rgb(255, 255, 255);
     cursor: pointer;
@@ -158,7 +151,6 @@ h1 {
     background-color: #000000;
     color: aliceblue;
     text-decoration-color: aliceblue;
-
     border: #cb9999;
     cursor: pointer;
 }
@@ -171,7 +163,6 @@ h1 {
     align-items: center;
     padding-bottom: 0.5vh;
     object-fit: scale-down;
-
     margin-left: 0%;
     font-weight: bold;
     flex-direction: row;
@@ -190,8 +181,6 @@ h1 {
 
 .container69 a:hover {
     color: #ff0000;
-
-
 }
 
 
@@ -226,20 +215,15 @@ h1 {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-
-
     .logo_text {
         font-size: 20px;
     }
-
     .logo_img {
         height: 80%;
     }
-
     .gandhi {
         display: none;
     }
-
     .log_in_bt {
         font-size: 16px;
         padding: 10px;
@@ -248,7 +232,6 @@ h1 {
         border-radius: 25px;
         margin-right: 0px;
     }
-
     .register {
         font-size: 16px;
         padding: 10px;
@@ -265,23 +248,18 @@ h1 {
         height: 8vh;
         width: 96vw;
     }
-
     .register {
         display: none;
     }
-
     .logo_text {
         font-size: 20px;
     }
-
     .logo_img {
         height: 80%;
     }
-
     .gandhi {
         display: none;
     }
-
     .log_in_bt {
         font-size: 16px;
         padding: 10px;
