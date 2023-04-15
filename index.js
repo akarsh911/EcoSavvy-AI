@@ -4,6 +4,7 @@ const app = express();
 const PORT = 3000;
 const authRoute = require('./routes/auth.route');
 const dashboardRoute = require('./routes/dashboard.route');
+const getRoute = require('./routes/get.route');
 app.get('/', function (req, res) {
     res.sendFile('/static/html/home.html', { root: __dirname })
 });
@@ -18,6 +19,7 @@ app.get('/testing', function (req, res) {
 });
 app.use("/auth", authRoute);
 app.use("/dashboard", dashboardRoute);
+app.use("/get", getRoute);
 const path = require('path')
 app.use('/css', express.static(path.join(__dirname, 'static/css')))
 app.use('/html', express.static(path.join(__dirname, 'static/html')))
