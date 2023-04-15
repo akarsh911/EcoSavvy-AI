@@ -1,0 +1,7 @@
+appliance_name,lifespan,useful_components
+Toaster,7,"['Heating Element', 'Bread Rack']"
+Refrigerator,15,"['Compressor', 'Fan', 'Thermostat']"
+Washing Machine,11,"['Motor', 'Pump', 'Drum']"
+Dishwasher,8,"['Spray Arm', 'Rack', 'Heating Element']"
+Microwave,7,"['Turntable', 'Magnetron', 'Control Panel']"
+Oven,19,"['Heating Element', 'Broiler', 'Burner']"
