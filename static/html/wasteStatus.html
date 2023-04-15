@@ -4,8 +4,22 @@
     $("#header").load("../html/header.html");
   }); 
 </script>
+<script src="../js/wasteStatus.js"></script>
 <div id="header"></div>
-<link rel="stylesheet" href="../css/logistics.css">
-<form action="">
-    
-</form>
+<link rel="stylesheet" href="../css/wasteStatus.css">
+<div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="Type"/>
+        <input type="password" placeholder="Lifespan in years"/>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>

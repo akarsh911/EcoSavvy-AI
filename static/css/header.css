@@ -5,7 +5,7 @@ body {
 
 .top_bar {
     min-width: min-content;
-    width:100%;
+    width:95vw;
     height: 12vh;
     max-height: 90px;
     position: absolute;
