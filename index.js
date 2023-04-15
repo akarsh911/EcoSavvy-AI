@@ -6,4 +6,4 @@ app.use("/auth", authRoute);
 
 app.listen(PORT, () => {
     console.log("Server is running")
-})
+})  
