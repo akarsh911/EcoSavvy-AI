@@ -9,117 +9,75 @@
 
 .u-section-1 .u-text-1 {
     font-size: 7.5rem;
-    margin: 137px 59px 0 auto;
+    margin: 137px 9px 0 852px;
 }
 
 .u-section-1 .u-text-2 {
     letter-spacing: 4px;
     text-transform: uppercase;
     font-size: 1.25rem;
-    margin: 34px -18px 0 auto;
+    margin: 50px 9px 0 960px;
 }
 
 .u-section-1 .u-text-3 {
-    margin: 23px -25px 0 636px;
-}
-
-.u-section-1 .u-btn-1 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 0.875rem;
-    transition-duration: 0.5s;
-    box-shadow: 2px 0 0 0 rgba(0, 0, 0, 0);
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
-    margin: 23px 0 60px auto;
+    margin: 50px 17px 60px 594px;
 }
 
 @media (max-width: 1199px) {
     .u-section-1 .u-sheet-1 {
-        min-height: 556px;
+        min-height: 505px;
+    }
+    .u-section-1 .u-text-1 {
+        margin-left: 556px;
+    }
+    .u-section-1 .u-text-2 {
+        margin-left: 460px;
     }
     .u-section-1 .u-text-3 {
-        margin-left: 411px;
-    }
-    .u-section-1 .u-btn-1 {
-        border-style: solid;
+        margin-right: 0;
+        margin-left: 111px;
     }
 }
 
 @media (max-width: 991px) {
     .u-section-1 .u-sheet-1 {
-        min-height: 426px;
+        min-height: 387px;
+    }
+    .u-section-1 .u-text-1 {
+        margin-left: 426px;
+    }
+    .u-section-1 .u-text-2 {
+        margin-left: 240px;
     }
     .u-section-1 .u-text-3 {
-        margin-left: 191px;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 767px) {
     .u-section-1 .u-sheet-1 {
-        min-height: 320px;
+        min-height: 290px;
     }
-    .u-section-1 .u-text-3 {
-        margin-left: 11px;
+    .u-section-1 .u-text-1 {
+        margin-left: 320px;
+    }
+    .u-section-1 .u-text-2 {
+        margin-left: 60px;
     }
 }
 
 @media (max-width: 575px) {
     .u-section-1 .u-sheet-1 {
-        min-height: 201px;
+        min-height: 183px;
     }
     .u-section-1 .u-text-1 {
         font-size: 4.5rem;
+        margin-left: 201px;
     }
     .u-section-1 .u-text-2 {
         font-size: 1rem;
-    }
-    .u-section-1 .u-text-3 {
-        margin-right: 0;
         margin-left: 0;
     }
-}
-
-.u-section-1 .u-btn-1,
-.u-section-1 .u-btn-1:before,
-.u-section-1 .u-btn-1>.u-container-layout:before {
-    transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
-}
-
-.u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover {
-    box-shadow: 2px 2px 8px 0px rgba(128, 128, 128, 1) !important;
-    transform: translateX(0px) translateY(px) scale(1) rotate(0deg) !important;
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
-}
-
-.u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover:before {
-    background-color: transparent !important;
-}
-
-.u-section-1 .u-btn-1 {
-    border-color: transparent !important;
-}
-
-.u-section-1 .u-btn-1.u-btn-1.u-btn-1.hover {
-    box-shadow: 2px 2px 8px 0px rgba(128, 128, 128, 1) !important;
-    transform: translateX(0px) translateY(px) scale(1) rotate(0deg) !important;
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
-}
-
-.u-section-1 .u-btn-1 {
-    border-color: transparent !important;
-}
-
-.u-section-1 .u-container-layout:hover .u-btn-1 {
-    transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
-}
-
-.u-container-layout.hover .u-section-1 .u-btn-1 {
-    transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
-}
-
-.u-section-2 {
-    background-image: linear-gradient(white, #adf6f2);
 }
 
 .u-section-2 .u-sheet-1 {
@@ -133,7 +91,7 @@
 
 .u-section-2 .u-image-1 {
     min-height: 696px;
-    background-image: url("https://assets.nicepagecdn.com/0a12fe14/4635576/images/8efb2e101cdfa50a62265846afbb10f8.jpg");
+    background-image: url("https://assets.nicepagecdn.com/0a12fe14/4635576/images/WhatsApp_Image_2023-04-15_at_22.14.12-removebg-preview.png");
     background-position: 50% 50%;
 }
 
@@ -154,14 +112,15 @@
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     transition-duration: 0.5s;
     font-size: 3.75rem;
-    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
     --animation-custom_in-translate_x: -200px;
     --animation-custom_in-translate_y: 0px;
     --animation-custom_in-opacity: 0;
     --animation-custom_in-rotate: 0deg;
     --animation-custom_in-scale: 1;
-    text-decoration: underline !important;
-    margin: 59px -308px 0 51px;
+    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+    font-weight: 700;
+    text-decoration: none !important;
+    margin: 49px -165px 0 -92px;
 }
 
 .u-section-2 .u-text-2 {
@@ -171,7 +130,7 @@
     font-family: Cabin;
     font-size: 1.875rem;
     transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
-    margin: 100px -161px 0 196px;
+    margin: 34px -18px 0 52px;
 }
 
 @media (max-width: 1199px) {
@@ -286,25 +245,21 @@
     transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 }
 
-.u-section-3 {
-    background-image: linear-gradient(white, #49b809);
-}
-
 .u-section-3 .u-sheet-1 {
     min-height: 887px;
 }
 
 .u-section-3 .u-image-1 {
-    width: 607px;
-    height: 735px;
-    margin: 124px -59px 0 auto;
+    width: 683px;
+    height: 632px;
+    margin: 194px 0 0 auto;
 }
 
 .u-section-3 .u-group-1 {
     width: 631px;
     min-height: 653px;
     height: auto;
-    margin: -769px auto 60px 89px;
+    margin: -722px auto 60px 89px;
 }
 
 .u-section-3 .u-container-layout-1 {
@@ -315,9 +270,10 @@
     line-height: 1.8;
     font-size: 3.75rem;
     text-shadow: 7px 4px 11px rgba(0, 0, 0, 0.4);
-    text-decoration: underline !important;
     --animation-custom_in-translate_x: -200px;
     --animation-custom_in-scale: 1;
+    font-weight: 700;
+    text-decoration: none solid rgb(64, 64, 64);
     margin: 93px -45px 0;
 }
 
@@ -334,6 +290,7 @@
 @media (max-width: 1199px) {
     .u-section-3 .u-image-1 {
         width: 627px;
+        height: 631px;
         margin-right: 170px;
     }
     .u-section-3 .u-group-1 {
@@ -371,7 +328,7 @@
 
 @media (max-width: 767px) {
     .u-section-3 .u-sheet-1 {
-        min-height: 806px;
+        min-height: 755px;
     }
     .u-section-3 .u-image-1 {
         width: 540px;
@@ -381,7 +338,7 @@
     }
     .u-section-3 .u-group-1 {
         width: 461px;
-        margin-top: -688px;
+        margin-top: -590px;
         margin-left: 409px;
     }
     .u-section-3 .u-container-layout-1 {
@@ -402,7 +359,7 @@
 
 @media (max-width: 575px) {
     .u-section-3 .u-sheet-1 {
-        min-height: 564px;
+        min-height: 570px;
     }
     .u-section-3 .u-image-1 {
         width: 340px;
@@ -412,7 +369,7 @@
     }
     .u-section-3 .u-group-1 {
         width: 295px;
-        margin-top: -446px;
+        margin-top: -405px;
         margin-left: 493px;
     }
     .u-section-3 .u-container-layout-1 {
@@ -459,7 +416,7 @@
 }
 
 .u-section-4 {
-    background-image: linear-gradient(white, #f5d654);
+    min-height: 318px;
 }
 
 .u-section-4 .u-sheet-1 {
@@ -473,7 +430,7 @@
 
 .u-section-4 .u-image-1 {
     min-height: 616px;
-    background-image: url("https://assets.nicepagecdn.com/0a12fe14/4635576/images/Savvycom-AI-Lab.jpg");
+    background-image: url("https://assets.nicepagecdn.com/0a12fe14/4635576/images/WhatsApp_Image_2023-04-15_at_22.25.15-removebg-preview.png");
     background-position: 50% 50%;
 }
 
@@ -488,8 +445,8 @@
     --animation-custom_in-opacity: 0;
     --animation-custom_in-rotate: 0deg;
     --animation-custom_in-scale: 1;
-    text-decoration: underline !important;
-    margin: -555px -13px 0 901px;
+    font-weight: 700;
+    margin: -525px -26px 0 914px;
 }
 
 .u-section-4 .u-text-2 {
@@ -499,18 +456,16 @@
     transition-duration: 0.5s;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-    margin: 85px 40px 60px 775px;
+    margin: 52px 40px 60px 775px;
 }
 
 @media (max-width: 1199px) {
-    .u-section-4 {
-        min-height: 318px;
-    }
     .u-section-4 .u-sheet-1 {
         min-height: 673px;
     }
     .u-section-4 .u-text-1 {
-        margin-left: 651px;
+        text-decoration: none solid rgb(64, 64, 64);
+        margin-left: 664px;
     }
     .u-section-4 .u-text-2 {
         transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
@@ -531,7 +486,7 @@
         padding-right: 30px;
     }
     .u-section-4 .u-text-1 {
-        margin-left: 541px;
+        margin-left: 554px;
     }
     .u-section-4 .u-text-2 {
         margin-left: 95px;
@@ -553,7 +508,7 @@
         padding-right: 10px;
     }
     .u-section-4 .u-text-1 {
-        margin-left: 451px;
+        margin-left: 464px;
     }
     .u-section-4 .u-text-2 {
         font-size: 1rem;
@@ -572,7 +527,7 @@
         min-height: 667px;
     }
     .u-section-4 .u-text-1 {
-        margin-left: 351px;
+        margin-left: 364px;
     }
 }
 
@@ -19768,7 +19723,7 @@ blockquote {
 .u-header .u-image-1 {
     width: 215px;
     height: 78px;
-    margin: 17px auto 0 -70px;
+    margin: 18px auto 0 31px;
 }
 
 .u-header .u-logo-image-1 {
@@ -19777,12 +19732,11 @@ blockquote {
 }
 
 .u-header .u-menu-1 {
-    margin: -57px 0 38px auto;
+    margin: -56px 0 36px auto;
 }
 
 .u-header .u-nav-1 {
     font-size: 1rem;
-    letter-spacing: normal;
 }
 
 .u-header .u-nav-2 {
@@ -19791,11 +19745,14 @@ blockquote {
 
 @media (max-width: 1199px) {
     .u-header .u-image-1 {
-        margin-left: -70px;
+        margin-left: 31px;
     }
     .u-header .u-menu-1 {
         width: auto;
-        margin-top: -57px;
+        margin-top: -56px;
+    }
+    .u-header .u-nav-1 {
+        letter-spacing: normal;
     }
 }
 
@@ -41996,12 +41953,6 @@ blockquote .small:before {
 .u-categories ul li.u-categories-item:last-child a {
     margin: 0 !important;
 }
-
-
-/*begin-commonstyles photoswipe*/
-
-
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
 
 /*
