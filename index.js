@@ -9,6 +9,9 @@ app.get('/login', function (req, res) {
 app.get('/register', function (req, res) {
     res.sendFile('/static/html/register.html', { root: __dirname })
 });
+app.get('/testing', function (req, res) {
+    res.sendFile('/static/html/statistics.html', { root: __dirname })
+});
 app.use("/auth", authRoute);
 const path = require('path')
 app.use('/css', express.static(path.join(__dirname, 'static/css')))
