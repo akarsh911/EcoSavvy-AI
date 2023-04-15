@@ -11,6 +11,11 @@ body {
     margin: 5em auto 2em;
 }
 
+.subdad {
+    width: 100vw;
+    display: flex;
+}
+
 .desktop__title {
     background: linear-gradient(to bottom, #eee, #e5e5e5);
     padding: 8px 8px 0;
@@ -519,6 +524,7 @@ footer a .icons {
     grid-template-columns: 1fr 3px 1fr;
     font-family: "Fira Sans", sans-serif;
     color: #000000;
+
 }
 
 .timeline__component {
