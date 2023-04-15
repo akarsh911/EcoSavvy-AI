@@ -29,5 +29,12 @@ router.get('/logistics', (req, res) => {
         res.json(results);
     });
 });
+router.get('/inventory', (req, res) => {
+    const query = 'SELECT * FROM inventory';
+    connection.query(query, (error, results, fields) => {
+        if (error) throw error;
+        res.json(results);
+    });
+});
 
 module.exports = router;

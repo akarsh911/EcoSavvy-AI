@@ -1,21 +1,24 @@
-$('.message a').click(function(){
-    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
- });
-let data3 = JSON.parse(window.localStorage.getItem('hospital_assigned_data'));
-var count = data3.count;
-var da = "";
 
-for (var i = 0; i < count; i++) {
-
-    let ht = `<div class="card">
-                <div class="card-image">
-                <a href="../html/doctors_list.html?s_no=`+data3[i].s_no+`"> <img  src="`+data3[i].url+`" alt=""></a>
-                </div>
-                <div class="category"> Contact:`+ data3[i].ph_no + `</div>
-                <div class="heading">`+ data3[i].name + ` <br>
-                    <span class="author">No. of patients-`+ data3[i].patients + `</span> <br>
-                    <span class="author">No. of doctors-`+ data3[i].doctors + `</span> <br>
-                </div></div>`;
-    da += ht;
+function check()
+{
+    const data1 = document.getElementById('parts'); 
+    const data2 = document.getElementById('lifespan'); 
+    const data3 = document.getElementById('percent');  
+    const data4 = document.getElementById('text-title');
+    const data5 = document.getElementById('text-body');
+    const data6 = document.getElementById('text-body1');
+    data4 += data1;
+    data5 += data5 + 'Lifespan :' + data2 + 'years.';
+    if(data3 > 10)
+    {
+        data6 += data6 + 'Shred';
+    }
+    else if(data3 < 3)
+    {
+        data6 += data6 + 'Refurbish';
+    }
+    else
+    {
+        data6 += data6 + 'Disassemble';
+    }
 }
-document.getElementById("container").innerHTML += da;
