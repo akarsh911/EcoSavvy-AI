@@ -61,6 +61,7 @@ body {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
+    background-color: #aee2a9;
 }
 
 .log_in_bt {
@@ -83,6 +84,7 @@ body {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
+    background-color: #aee2a9;
 }
 
 .register {
@@ -119,6 +121,7 @@ h1 {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
+    background-color: #aee2a9;
 }
 
 .log_in_bt:hover {
@@ -172,6 +175,7 @@ h1 {
     align-items: center;
     background-color: #236300f5;
     color: aliceblue;
+    background-color: #325431;
 }
 
 .container69 a {

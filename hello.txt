@@ -1,41 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bing Maps Example</title>
-    <meta charset="utf-8" />
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=loadMapScenario' async defer></script>
-    <script type='text/javascript'>
-        function loadMapScenario() {
-            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
-                center: new Microsoft.Maps.Location(20.5937, 78.9629), // Center of India
-                zoom: 5 // Zoom level
-            });
-
-            // Locations for the 10 states in India
-            var locations = [
-                { state: 'Kerala', location: new Microsoft.Maps.Location(10.8505, 76.2711) },
-                { state: 'West Bengal', location: new Microsoft.Maps.Location(22.9868, 87.8550) },
-                { state: 'Punjab', location: new Microsoft.Maps.Location(31.1471, 75.3412) },
-                { state: 'Nagaland', location: new Microsoft.Maps.Location(26.1584, 94.5624) },
-                { state: 'Delhi', location: new Microsoft.Maps.Location(28.7041, 77.1025) },
-                { state: 'Maharashtra', location: new Microsoft.Maps.Location(19.7515, 75.7139) },
-                { state: 'Arunachal Pradesh', location: new Microsoft.Maps.Location(28.2180, 94.7278) },
-                { state: 'Jharkhand', location: new Microsoft.Maps.Location(23.6102, 85.2799) },
-                { state: 'Jammu and Kashmir', location: new Microsoft.Maps.Location(33.7782, 76.5762) },
-                { state: 'Madhya Pradesh', location: new Microsoft.Maps.Location(22.9734, 78.6569) },
-            ];
-
-            // Add pushpins for each location
-            for (var i = 0; i < locations.length; i++) {
-                var pin = new Microsoft.Maps.Pushpin(locations[i].location, {
-                    title: locations[i].state
-                });
-                map.entities.push(pin);
-            }
-        }
-    </script>
-</head>
-<body>
-    <div id='myMap' style='width: 100vw; height: 100vh;'></div>
-</body>
-</html>
+CREATE TABLE inventory(s_no DOUBLE,state VARCHAR(10),maximum_capacity DOUBLE,current_ewaste DOUBLE);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (1,'Andhra Pradesh',6700,6420.32872516452);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (2,'Arunachal Pradesh',42000,41985.6941504684);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (3,'Assam',19000,17565.4914555873);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (4,'Bihar',11000,10995.5729320579);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (5,'Chhattisgarh',5000,4062.0740753842);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (6,'Goa',16000,17151.3255666109);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (7,'Gujarat',20000,5942.21803627984);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (8,'Haryana',23000,18486.4127849835);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (9,'Himachal Pradesh',35000,33225.3288586452);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (10,'Jharkhand',70000,24237.816123246);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (11,'Karnataka',30000,28582.7763850849);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (12,'Kerala',50000,45166.6576985645);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (13,'Madhya Pradesh',35000,33225.6851737928);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (14,'Maharashtra',40000,35484.2424382136);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (15,'Manipur',2000,1762.38217322432);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (16,'Meghalaya',5000,4263.85286775828);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (17,'Mizoram',50000,48629.6049536586);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (18,'Nagaland',50000,45080.492934226);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (19,'Odisha',45000,37892.7618648371);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (20,'Punjab',2000,1302.97097454565);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (21,'Rajasthan',20000,17549.3779486288);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (22,'Sikkim',20000,19848.5713780169);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (23,'Tamil Nadu',20000,17272.8798097508);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (24,'Telangana',23000,16104.6145723111);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (25,'Tripura',32000,30168.6595183856);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (26,'Uttar Pradesh',2000,1854.80179441871);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (27,'Uttarakhand',40000,38627.9433989124);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (28,'West Bengal',51000,42011.540341832);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (29,'Delhi',50000,31485.9498748969);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (30,'Jammu and Kashmir',5000,4626.44957336952);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (31,'Chandigarh',5000,3289.645829);
+INSERT INTO inventory (s_no,state,maximum_capacity,current_ewaste) VALUES (32,'Andman and nicobar Island',3000,2235.906372);

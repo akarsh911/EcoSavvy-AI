@@ -12,7 +12,7 @@
   <div class="beta">
 <div class="login-page">
     <div class="form">
-      <form class="login-form">
+      <form class="login-form" onsubmit="check()">
         <select name="parts" id="parts">
             <option value="volvo">Toaster</option>
             <option value="saab">Refrigerator</option>
@@ -22,8 +22,8 @@
             <option value="audi">Oven</option>
           </select>
           <br><br>
-        <input type="text" placeholder="Lifespan in years"/>
-        <input type="text" placeholder="Damage Percent"/>
+        <input type="text" id="lifespan" placeholder="Lifespan in years"/>
+        <input type="text" id="percent" placeholder="Damage Percent"/>
         <button>Submit</button>
       </form>
     </div>
@@ -32,9 +32,9 @@
   <div class="beta">
   <div class="card">
   <div class="card-details">
-    <p class="text-title">Appliance</p>
-    <p class="text-body">Lifespan</p>
-    <p class="text-body">Refurbish</p>
+    <p id="text-title">Appliance</p>
+    <p id="text-body">Lifespan</p>
+    <p id="text-body1">Refurbish</p>
   </div>
   
 </div>
