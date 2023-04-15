@@ -4,6 +4,9 @@ const app = express();
 const PORT = 3000;
 const authRoute = require('./routes/auth.route');
 const dashboardRoute = require('./routes/dashboard.route');
+app.get('/', function (req, res) {
+    res.sendFile('/static/html/home.html', { root: __dirname })
+});
 app.get('/login', function (req, res) {
     res.sendFile('/static/html/login.html', { root: __dirname })
 });
