@@ -137,4 +137,16 @@ body {
     opacity: 1;
    }
 
+   .papa{
+    border: 0px solid #fff;
+    padding: 0px;
+}
+
+.beta{
+    width: 40%;
+    float: left;
+    padding: 20px;
+   
+}
+
    
