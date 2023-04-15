@@ -1,10 +1,9 @@
 const express = require('express');
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
 const router = express.Router();
+const bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.json());
-
+router.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -20,8 +19,9 @@ router.get('/', function (req, res) {
   res.send('GET route on login.');
 });
 router.post('/', function (req, res) {
-  const { username, password } = req.body;
-
+  console.log(req.body);
+  username = req.body.username;
+  password = req.body.password;
   const sql = 'SELECT * FROM users WHERE username = ?';
   db.query(sql, [username, password], (err, result) => {
     if (err) throw err;

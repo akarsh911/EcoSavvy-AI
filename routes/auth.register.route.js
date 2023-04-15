@@ -1,9 +1,9 @@
 const express = require('express');
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
 const router = express.Router();
+const bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 const db = mysql.createConnection({
   host: 'localhost',
