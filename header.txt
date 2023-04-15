@@ -4,3 +4,4 @@
     $("#header").load("../html/header.html");
   }); 
 </script>
+<div id="header"></div>
