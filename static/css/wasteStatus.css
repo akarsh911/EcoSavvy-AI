@@ -2,6 +2,7 @@
 
 .login-page {
   width: 360px;
+  height: 360px;
   padding: 8% 0 0;
   margin: auto;
 }
@@ -148,5 +149,6 @@ body {
     padding: 20px;
    
 }
-
-   
+.parts{
+    
+}
