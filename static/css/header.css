@@ -5,7 +5,7 @@ body {
 }
 
 .top_bar {
-    min-width: min-content;
+    max-width: 100%;
     width: 90vw;
     height: 12vh;
     max-height: 80px;
@@ -166,7 +166,7 @@ h1 {
 .container69 {
     display: flex;
     padding-top: 10vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-bottom: 0.5vh;
