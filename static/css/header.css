@@ -188,7 +188,7 @@ h1 {
     top: 100px;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 8vh;
+    padding-top: 4%;
     border-radius: 10px;
     width: 80vw;
     height: 0.2px;
@@ -239,6 +239,8 @@ h1 {
 .link {
     position: relative;
     bottom: 65px;
+    gap: 2%;
+    right: 10%;
     display: inline-block;
 }
 
