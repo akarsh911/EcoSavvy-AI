@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 
-# generate random data
+
 states = []
 population = []
 urban_population = []
@@ -19,7 +19,7 @@ for i in range(30):
     internet_penetration.append(random.uniform(10, 90))
     e_waste.append(random.uniform(1000, 50000))
 
-# create a DataFrame
+
 data = pd.DataFrame({
     'State': states,
     'Population': population,
@@ -30,5 +30,5 @@ data = pd.DataFrame({
     'E-Waste (MT)': e_waste
 })
 
-# save the data to a CSV file
+
 data.to_csv('e-waste_data_kanishk.csv', index=False)
