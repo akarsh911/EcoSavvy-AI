@@ -12,7 +12,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'mydb'
+  database: 'ecosavvyai'
 });
 
 db.connect((err) => {
@@ -23,7 +23,7 @@ db.connect((err) => {
 app.post('/register', (req, res) => {
   const { username, password } = req.body;
     const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
-    const values = [username, hash];
+    const values = [username, password];
     db.query(sql, values, (err, result) => {
       if (err) {
         if (err.code === 'ER_DUP_ENTRY') {

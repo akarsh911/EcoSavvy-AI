@@ -10,7 +10,7 @@ const db = mysql.createConnection({
     host : 'localhost',
     user: 'root',
     password: '',
-    database: 'mydb'
+    database: 'ecosavvyai'
 });
 
 db.connect((err) => {
@@ -22,7 +22,7 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
   
     const sql = 'SELECT * FROM users WHERE username = ?';
-    db.query(sql, [username], (err, result) => {
+    db.query(sql, [username, password], (err, result) => {
       if (err) throw err;
   
       if (result.length === 0) {
