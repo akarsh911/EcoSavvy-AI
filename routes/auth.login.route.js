@@ -17,7 +17,7 @@ db.connect((err) => {
     console.log('Connected to MySQL');
 });
 
-router.post('/login', (req, res) => {
+app.post('/login', (req, res) => {
     const { username, password } = req.body;
   
     const sql = 'SELECT * FROM users WHERE username = ?';
