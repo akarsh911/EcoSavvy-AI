@@ -1,11 +1,8 @@
 body {
-   
+
     font-family: "Comfortaa", sans-serif;
-    padding-top: 4em;
 }
-* {
-    box-sizing: border-box;
-}
+
 .screenshot__wrapper {
     width: 400px;
     height: auto;
@@ -13,6 +10,7 @@ body {
     line-height: 1;
     margin: 5em auto 2em;
 }
+
 .desktop__title {
     background: linear-gradient(to bottom, #eee, #e5e5e5);
     padding: 8px 8px 0;
@@ -21,6 +19,7 @@ body {
     min-height: 25px;
     top: 0;
 }
+
 .desktop__title__button {
     width: 10px;
     height: 10px;
@@ -30,12 +29,15 @@ body {
     background: #fc605c;
     margin: 0 1px;
 }
+
 .desktop__title__button:nth-child(2) {
     background: #fdbf41;
 }
+
 .desktop__title__button:nth-child(3) {
     background: #34c94a;
 }
+
 .desktop__title__name {
     position: absolute;
     margin: auto;
@@ -46,6 +48,7 @@ body {
     text-align: center;
     font-size: 14px;
 }
+
 .desktop__body {
     background: #f5f5f5;
     border-radius: 0 0 6px 6px;
@@ -54,11 +57,13 @@ body {
     position: relative;
     top: 0;
 }
+
 .project-profitability {
     position: relative;
     top: -8px;
     opacity: 0;
 }
+
 .graph-dropdown {
     padding: 0.6em;
     display: flex;
@@ -66,13 +71,16 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
     position: relative;
 }
+
 .graph-dropdown__label {
     padding: 12px 25px 0 10px;
 }
+
 .graph-dropdown__options {
     flex: 2;
     position: relative;
 }
+
 .graph-dropdown__options__main {
     position: relative;
     background: #fff;
@@ -81,6 +89,7 @@ body {
     border-radius: 8px;
     border: 1px solid #f3f3f3;
 }
+
 .graph-dropdown__options__dropdown {
     z-index: 10;
     top: 35px;
@@ -93,10 +102,12 @@ body {
     list-style: none;
     padding: 5px;
 }
+
 .graph-dropdown__options__dropdown li {
     padding: 10px 8px;
     border-radius: 8px;
 }
+
 .project-graph {
     background: #f5f5f5;
     min-height: 250px;
@@ -108,16 +119,19 @@ body {
     background-size: 100% 51px;
     width: 0;
 }
+
 .project-graph__section {
     flex: 0 0 20%;
     text-align: center;
     position: relative;
 }
+
 .project-graph__section__line {
     width: 100%;
     position: absolute;
     left: 50%;
 }
+
 .project-graph__section__line:after {
     content: "";
     position: absolute;
@@ -126,6 +140,7 @@ body {
     left: 0;
     width: 0;
 }
+
 .project-graph__section__line:before {
     content: "";
     position: absolute;
@@ -140,27 +155,33 @@ body {
     z-index: 4;
     opacity: 0;
 }
+
 .project-graph__section__line.green {
     background: #53ca0c;
     color: #53ca0c;
 }
+
 .project-graph__section__line.yellow {
     background: #f4cf65;
     color: #f4cf65;
 }
+
 .project-graph__section__date {
     position: relative;
     top: 192px;
     opacity: 0;
 }
+
 .project-graph__section__date span {
     display: block;
     font-size: 12px;
 }
+
 .project-graph__section__date span.date {
     margin-top: 3px;
     color: #999;
 }
+
 .project-graph__popup {
     font-size: 12px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
@@ -178,27 +199,34 @@ body {
     opacity: 0;
     border: 0.5px solid #eee;
 }
+
 .project-graph__popup p {
     margin: 5px 0 10px;
 }
+
 .project-graph__popup__item {
     margin: 6px 0;
     display: flex;
 }
+
 .project-graph__popup__item .bullet-green {
     color: #53ca0c;
 }
+
 .project-graph__popup__item .bullet-yellow {
     color: #f4cf65;
 }
+
 .project-graph__popup__item .insight-type {
     flex: 100px;
 }
+
 .project-graph__popup__item .insight-total {
     flex: auto;
     color: #999;
     text-align: right;
 }
+
 .project-graph__popup__line {
     position: absolute;
     height: 0;
@@ -208,147 +236,177 @@ body {
     z-index: 1;
     left: 0;
 }
+
 .project-graph__section:nth-child(1) .green {
     transform: rotate(38deg);
     margin-left: -10px;
     top: 52px;
     width: 98px;
 }
+
 .project-graph__section:nth-child(1) .yellow {
     margin-left: -2px;
     top: 130px;
     transform: rotate(15deg);
     width: 85px;
 }
+
 .project-graph__section:nth-child(2) .green {
     transform: rotate(-23deg);
     margin-left: -5px;
     top: 68px;
     width: 80px;
 }
+
 .project-graph__section:nth-child(2) .yellow {
     margin-left: -3px;
     transform: rotate(-13deg);
     top: 131px;
     width: 80px;
 }
+
 .project-graph__section:nth-child(3) .green {
     transform: rotate(14deg);
     margin-left: -11px;
     top: 62px;
     width: 88px;
 }
+
 .project-graph__section:nth-child(3) .yellow {
     margin-left: -3px;
     top: 122px;
     transform: rotate(0deg);
     width: 80px;
 }
+
 .project-graph__section:nth-child(4) .green {
     transform: rotate(-26deg);
     margin-left: -8px;
     top: 54px;
     width: 95px;
 }
+
 .project-graph__section:nth-child(4) .yellow {
     margin-left: -3px;
     top: 115px;
     transform: rotate(-9deg);
     width: 80px;
 }
+
 .project-graph__section:nth-child(5) .green {
     margin-left: -2px;
     top: 35px;
     width: 0;
 }
+
 .project-graph__section:nth-child(5) .yellow {
     margin-left: -2px;
     width: 0;
     top: 109px;
 }
+
 .project-profitability.active {
     opacity: 1;
     top: 0;
     transition: 0.3s ease;
 }
+
 .project-profitability.active .project-graph {
     width: 100%;
     transition: 0.5s ease 0.5s;
 }
+
 .project-profitability.active .project-graph__section__date {
     opacity: 1;
     transition: 0.3s ease 0.8s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(1) .project-graph__section__line:before {
     opacity: 1;
     transition: 0.3s ease 1s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(1) .project-graph__section__line:after {
     width: 100%;
     transition: 0.8s ease 1.2s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(2) .project-graph__section__line:before {
     opacity: 1;
     transition: 0.3s ease 1.6s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(2) .project-graph__section__line:after {
     width: 100%;
     transition: 0.8s ease 1.8s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(3) .project-graph__section__line:before {
     opacity: 1;
     transition: 0.3s ease 2.2s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(3) .project-graph__section__line:after {
     width: 100%;
     transition: 0.8s ease 2.4s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(4) .project-graph__section__line:before {
     opacity: 1;
     transition: 0.3s ease 2.8s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(4) .project-graph__section__line:after {
     width: 100%;
     transition: 0.8s ease 3s;
 }
+
 .project-profitability.active .project-graph__section:nth-child(5) .project-graph__section__line:before {
     opacity: 1;
     transition: 0.3s ease 3.4s;
 }
+
 .project-profitability.active .project-graph__popup__line {
     height: 100%;
     transition: 0.5s linear 4.1s;
 }
+
 .project-profitability.active .project-graph__popup {
     transform: scale(1);
     transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 4.5s;
     opacity: 1;
 }
+
 .js-replay {
     margin: 0 auto 6em;
     font-size: 12px;
     cursor: pointer;
 }
+
 aside.context {
     text-align: center;
     color: #fff;
 }
+
 aside.context a {
     text-decoration: none;
     color: #fff;
     padding: 3px 0;
     border-bottom: 1px dashed;
 }
+
 aside.context .explanation {
     max-width: 700px;
     margin: 2em auto 0;
     line-height: 1.7;
 }
+
 footer {
     text-align: center;
     margin: 4em auto;
     width: 100%;
 }
+
 footer a {
     text-decoration: none;
     display: inline-block;
@@ -360,9 +418,11 @@ footer a {
     color: #fff;
     margin: 5px;
 }
+
 footer a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
 footer a .icons {
     margin-top: 12px;
     display: inline-block;
@@ -380,14 +440,16 @@ footer a .icons {
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 20%;
 
-  }
-  .numbers__window {
+}
+
+.numbers__window {
     display: inline-block;
     overflow: hidden;
     width: 0.5em;
     height: 1em;
-  }
-  .numbers__window__digit {
+}
+
+.numbers__window__digit {
     font: inherit;
     word-break: break-all;
     display: block;
@@ -396,38 +458,47 @@ footer a .icons {
     margin: 0 auto;
     overflow: inherit;
     animation: counting 0.4s steps(10) forwards infinite;
-  }
-  .numbers__window__digit::before {
+}
+
+.numbers__window__digit::before {
     content: attr(data-fake);
     display: inline-block;
     width: 100%;
     height: auto;
-  }
-  @keyframes counting {
+}
+
+@keyframes counting {
     100% {
-      transform: translate3d(0, -10em, 0);
+        transform: translate3d(0, -10em, 0);
     }
-  }
-  .numbers__window__digit--1 {
+}
+
+.numbers__window__digit--1 {
     animation-iteration-count: 3;
-  }
-  .numbers__window__digit--2 {
+}
+
+.numbers__window__digit--2 {
     animation-iteration-count: 6;
-  }
-  .numbers__window__digit--3 {
+}
+
+.numbers__window__digit--3 {
     animation-iteration-count: 9;
-  }
-  .numbers__window__digit--4 {
+}
+
+.numbers__window__digit--4 {
     animation-iteration-count: 2;
-  }
-  .numbers__window__digit--5 {
+}
+
+.numbers__window__digit--5 {
     animation-iteration-count: 15;
-  }
-  .numbers__window__digit--5 {
+}
+
+.numbers__window__digit--5 {
     animation-iteration-count: 17;
-  
-  }
-  .dad {
+
+}
+
+.dad {
     border: 3px solid #fff;
     padding: 20px;
 }
@@ -436,11 +507,11 @@ footer a .icons {
     width: 50%;
     float: left;
     padding: 20px;
-    
-} 
 
- 
-  .timeline {
+}
+
+
+.timeline {
     margin: 0 auto;
     max-width: 750px;
     padding: 25px;
@@ -448,30 +519,30 @@ footer a .icons {
     grid-template-columns: 1fr 3px 1fr;
     font-family: "Fira Sans", sans-serif;
     color: #000000;
-  }
-  
-  .timeline__component {
+}
+
+.timeline__component {
     margin: 0 20px 20px 20px;
-  }
-  
-  .timeline__component--bg {
+}
+
+.timeline__component--bg {
     padding: 1.5em;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-  }
-  
-  /* LEAVE TILL LAST */
-  .timeline__component--bottom {
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
     margin-bottom: 0;
-  }
-  
-  .timeline__middle {
+}
+
+.timeline__middle {
     position: relative;
     background: #000000;
-  }
-  
-  .timeline__point {
+}
+
+.timeline__point {
     position: absolute;
     top: 0;
     left: 50%;
@@ -480,25 +551,24 @@ footer a .icons {
     height: 15px;
     background: #826565;
     border-radius: 50%;
-  }
-  
-  /* LEAVE TILL LAST */
-  .timeline__point--bottom {
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
     top: initial;
     bottom: 0;
-  }
-  
-  .timeline__date--right {
+}
+
+.timeline__date--right {
     text-align: right;
-  }
-  
-  .timeline__title {
+}
+
+.timeline__title {
     margin: 0;
     font-size: 1.15em;
     font-weight: bold;
-  }
-  
-  .timeline__paragraph {
+}
+
+.timeline__paragraph {
     line-height: 1.5;
-  }
-  
+}
