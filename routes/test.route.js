@@ -1,6 +1,21 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const router = express.Router();
+const app = express();
+app.use(bodyParser.json());
 
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'ecosavvyai'
+});
+
+db.connect((err) => {
+    if (err) throw err;
+    console.log('Connected to MySQL');
+});
 router.get('/', function (req, res) {
     res.send('GET route on things.');
 });
