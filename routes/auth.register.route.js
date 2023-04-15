@@ -21,8 +21,8 @@ router.get('/', function (req, res) {
 });
 router.post('/', function (req, res) {
   const { username, password } = req.body;
-  const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
-  const values = [username, password];
+  const sql = 'INSERT INTO users (f_name,l_name,username, password) VALUES (?, ?)';
+  const values = [f_name,l_name,username, password];
   db.query(sql, values, (err, result) => {
     if (err) {
       if (err.code === 'ER_DUP_ENTRY') {
