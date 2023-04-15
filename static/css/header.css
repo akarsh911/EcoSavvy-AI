@@ -61,7 +61,6 @@ body {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
-    background-color: #aee2a9;
 }
 
 .log_in_bt {
@@ -84,7 +83,6 @@ body {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
-    background-color: #aee2a9;
 }
 
 .register {
@@ -121,7 +119,6 @@ h1 {
     width: 150px;
     margin-right: 10px;
     border-radius: 25px;
-    background-color: #aee2a9;
 }
 
 .log_in_bt:hover {
@@ -173,9 +170,8 @@ h1 {
     align-content: normal;
     justify-content: space-between;
     align-items: center;
-    background-color: #236300f5;
+    background-color: #000a61f5;
     color: aliceblue;
-    background-color: #325431;
 }
 
 .container69 a {
@@ -184,31 +180,7 @@ h1 {
 }
 
 .container69 a:hover {
-    color: #ffffff;
-}
-
-.link {
-    position: relative;
-    bottom: 65px;
-    display: inline-block;
-}
-
-.link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 3.4px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    scale: 0 1;
-    transform-origin: left;
-    transition: scale 0.25s;
-}
-
-.link:hover::before {
-    scale: 1;
+    color: #ff0000;
 }
 
 .left_align {
