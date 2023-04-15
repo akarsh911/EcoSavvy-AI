@@ -5,7 +5,7 @@ body {
 
 .top_bar {
     min-width: min-content;
-    width: 90vw;
+    width:100%;
     height: 12vh;
     max-height: 90px;
     position: absolute;
@@ -185,7 +185,7 @@ h1 {
     font-size: 20px;
     display: flex;
     position: relative;
-    top: 85px;
+    top: 10px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 4.5%;
@@ -268,7 +268,7 @@ h1 {
 @media screen and (min-width:400px) and (max-width:700px) {
     .top_bar {
         height: 8vh;
-        width: 96vw;
+        width: 100%;
         padding-left: 2vw;
         padding-right: 2vw;
     }

@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import RandomForestRegressor
 
 # load the data
-data = pd.read_csv('e-waste_data.csv')
+data = pd.read_csv('e-waste_data_kanishk.csv')
 
 # preprocess the data
 X = data.drop(['State', 'E-Waste (MT)'], axis=1)
