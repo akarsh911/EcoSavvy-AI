@@ -5,7 +5,7 @@ body {
 
 .top_bar {
     min-width: min-content;
-    width:100%;
+    width:95%;
     height: 12vh;
     max-height: 90px;
     position: absolute;
@@ -185,7 +185,7 @@ h1 {
     font-size: 20px;
     display: flex;
     position: relative;
-    top: 10px;
+    top: 88px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 4.5%;
