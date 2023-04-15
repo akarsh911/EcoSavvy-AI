@@ -32,7 +32,6 @@ router.post('/', function (req, res) {
         res.status(500).json({ error: 'Internal server error' });
       }
     } else {
-      res.status(201).json({ message: 'User registered successfully' });
       res.redirect('/login');
     }
   });
