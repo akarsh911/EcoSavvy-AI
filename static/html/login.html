@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="website icon " type="png" href="../images/R.png">
-
     <title>Login Page</title>
 
 </head>
@@ -13,7 +11,7 @@
 <body>
     <div class="container" id="container">
         <div class="form-container log-in-container">
-            <form action="#">
+            <form method="POST" action="/auth/login">
                 <br><br>
                 <h1>Login</h1>
                 <br>
@@ -23,21 +21,21 @@
                 </div>
 
 
-                <input type="email" placeholder="Email" />
+                <input type="email" name="username" placeholder="Email" />
                 <div class="line"></div>
-                <input type="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password" />
                 <div class="line"></div>
                 <br><br>
                 <a href="#">Forgot your password?</a>
                 <button>Log In</button>
-                <p>Not a Member? <a href="../html/regster.html">Register</a></p>
+                <p>Not a Member? <a href="/register">Register</a></p>
 
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-right">
-                    <img src="" alt="">
+                    <img width="100%" src="../media/man-throwing-electronic-for-recycling-4693022-3899876.png" alt="">
                     <p></p>
                 </div>
             </div>
