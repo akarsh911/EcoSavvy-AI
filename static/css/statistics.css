@@ -375,8 +375,11 @@ footer a .icons {
     font-size: 150px;
     line-height: 1em;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px;
     overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20%;
+
   }
   .numbers__window {
     display: inline-block;
@@ -389,7 +392,7 @@ footer a .icons {
     word-break: break-all;
     display: block;
     width: 0;
-    padding: 0 0.52em 0 0;
+    padding: 0 0.80em 0 0;
     margin: 0 auto;
     overflow: inherit;
     animation: counting 0.4s steps(10) forwards infinite;
