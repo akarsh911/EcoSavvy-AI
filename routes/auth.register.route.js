@@ -22,12 +22,10 @@ db.connect((err) => {
 
 app.post('/register', (req, res) => {
   const { username, password } = req.body;
-    // Insert user data into database
     const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
     const values = [username, hash];
     db.query(sql, values, (err, result) => {
       if (err) {
-        // Check for duplicate username error
         if (err.code === 'ER_DUP_ENTRY') {
           res.status(409).json({ error: 'Username already exists' });
         } else {
@@ -35,6 +33,7 @@ app.post('/register', (req, res) => {
         }
       } else {
         res.status(201).json({ message: 'User registered successfully' });
+        res.redirect('/login');
       }
     });
 });

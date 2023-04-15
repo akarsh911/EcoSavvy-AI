@@ -33,7 +33,7 @@ app.post('/login', (req, res) => {
           // Check if password is correct
           if (flag) {
             res.status(200).json({ message: 'Login successful' });
-            res.redirect(/dashboard);
+            res.redirect('/dashboard');
           } else {
             res.status(401).json({ error: 'Invalid username or password' });
           }
