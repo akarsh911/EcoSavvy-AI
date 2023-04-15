@@ -10,15 +10,15 @@ function check()
    
     if(data3 > 10)
     {
-        data6 += data6 + 'Shred';
+        document.getElementById('text-body1').innerHTML='Shred';
     }
     else if(data3 < 3)
     {
-        data6 += data6 + 'Refurbish';
+        document.getElementById('text-body1').innerHTML='Refurbish';
     }
     else
     {
-        data6 += data6 + 'Disassemble';
+        document.getElementById('text-body1').innerHTML='Disassemble';
     }
     document.getElementById('text-title').innerHTML=data1;
     document.getElementById('text-body').innerHTML='Lifespan :' + data2 + 'years.';
