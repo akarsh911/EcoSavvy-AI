@@ -3,10 +3,7 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const router = express.Router();
 const app = express();
-
-
 app.use(bodyParser.json());
-
 
 const db = mysql.createConnection({
   host: 'localhost',
@@ -19,21 +16,26 @@ db.connect((err) => {
   if (err) throw err;
   console.log('Connected to MySQL');
 });
-
-router.post('/register', (req, res) => {
-  const { username, password } = req.body;
-    const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
-    const values = [username, password];
-    db.query(sql, values, (err, result) => {
-      if (err) {
-        if (err.code === 'ER_DUP_ENTRY') {
-          res.status(409).json({ error: 'Username already exists' });
-        } else {
-          res.status(500).json({ error: 'Internal server error' });
-        }
-      } else {
-        res.status(201).json({ message: 'User registered successfully' });
-        res.redirect('/login');
-      }
-    });
+router.get('/', function (req, res) {
+  res.send('GET route on register.');
 });
+router.post('/', function (req, res) {
+  const { username, password } = req.body;
+  const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
+  const values = [username, password];
+  db.query(sql, values, (err, result) => {
+    if (err) {
+      if (err.code === 'ER_DUP_ENTRY') {
+        res.status(409).json({ error: 'Username already exists' });
+      } else {
+        res.status(500).json({ error: 'Internal server error' });
+      }
+    } else {
+      res.status(201).json({ message: 'User registered successfully' });
+      res.redirect('/login');
+    }
+  });
+});
+
+//export this router to use in our index.js
+module.exports = router;

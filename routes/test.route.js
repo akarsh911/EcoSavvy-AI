@@ -21,24 +21,20 @@ router.get('/', function (req, res) {
 });
 router.post('/', function (req, res) {
     const { username, password } = req.body;
-
-    const sql = 'SELECT * FROM users WHERE username = ?';
-    db.query(sql, [username, password], (err, result) => {
-        if (err) throw err;
-
-        if (result.length === 0) {
-            res.status(401).json({ error: 'Invalid username or password' });
-        } else {
-            if (flag) {
-                res.status(200).json({ message: 'Login successful' });
-                res.redirect('/dashboard');
+    const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
+    const values = [username, password];
+    db.query(sql, values, (err, result) => {
+        if (err) {
+            if (err.code === 'ER_DUP_ENTRY') {
+                res.status(409).json({ error: 'Username already exists' });
             } else {
-                res.status(401).json({ error: 'Invalid username or password' });
+                res.status(500).json({ error: 'Internal server error' });
             }
-
+        } else {
+            res.status(201).json({ message: 'User registered successfully' });
+            res.redirect('/login');
         }
     });
- 
 });
 
 //export this router to use in our index.js
