@@ -9,8 +9,11 @@ function check()
     var data6 = document.getElementById('text-body1').value;
    
     if(data3 > 10)
-    {
+    {   
+        if(data2>20)
         document.getElementById('text-body1').innerHTML='Shred';
+        else
+        document.getElementById('text-body1').innerHTML='Disassemble';
     }
     else if(data3 < 3)
     {
