@@ -56,7 +56,7 @@ body {
 
 .community_btn {
     border: 2px solid #ffffff;
-    background-color: #5f0161;
+    background-color: #1961138c;
     color: #fffefc;
     font-weight: bold;
     font-size: 16px;
@@ -84,7 +84,7 @@ body {
 
 .stock_btn {
     border: 2px solid #ffffff;
-    background-color: #5f0161;
+    background-color: #1961138c;
     font-weight: bold;
     font-size: 16px;
     padding: 10px;
@@ -139,7 +139,7 @@ h1 {
 
 .expense_btn {
     border: 2px solid #ffffff;
-    background-color: #5f0161;
+    background-color: #1961139c;
     font-weight: bold;
     font-size: 16px;
     color: #fffefc;
