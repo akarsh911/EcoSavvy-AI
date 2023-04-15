@@ -1,14 +1,13 @@
 
 function check()
 {
-    const data1 = document.getElementById('parts'); 
-    const data2 = document.getElementById('lifespan'); 
-    const data3 = document.getElementById('percent');  
-    const data4 = document.getElementById('text-title');
-    const data5 = document.getElementById('text-body');
-    const data6 = document.getElementById('text-body1');
-    data4 += data1;
-    data5 += data5 + 'Lifespan :' + data2 + 'years.';
+    var data1 = document.getElementById('parts').value; 
+    var data2 = document.getElementById('lifespan').value; 
+    var data3 = document.getElementById('percent').value;  
+    var data4 = document.getElementById('text-title').value;
+    var data5 = document.getElementById('text-body').value;
+    var data6 = document.getElementById('text-body1').value;
+   
     if(data3 > 10)
     {
         data6 += data6 + 'Shred';
@@ -21,5 +20,10 @@ function check()
     {
         data6 += data6 + 'Disassemble';
     }
+    document.getElementById('text-title').innerHTML=data1;
+    document.getElementById('text-body').innerHTML='Lifespan :' + data2 + 'years.';
     return false;
 }
+var form = document.getElementById("formId");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);

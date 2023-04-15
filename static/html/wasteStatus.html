@@ -4,7 +4,7 @@
     $("#header").load("../html/header.html");
   }); 
 </script>
-<script src="../js/wasteStatus.js"></script>
+
 <div id="header"></div>
 <link rel="stylesheet" href="../css/wasteStatus.css">
 <div>
@@ -12,14 +12,14 @@
   <div class="beta">
 <div class="login-page">
     <div class="form">
-      <form class="login-form" onsubmit="check()">
+      <form id="formId" class="login-form" onsubmit="check();return false">
         <select name="parts" id="parts">
-            <option value="volvo">Toaster</option>
-            <option value="saab">Refrigerator</option>
-            <option value="opel">Washing Machine</option>
-            <option value="audi">Dishwasher</option>
-            <option value="audi">Microwave</option>
-            <option value="audi">Oven</option>
+            <option value="Toaster">Toaster</option>
+            <option value="Refrigerator">Refrigerator</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="Dishwasher">Dishwasher</option>
+            <option value="Microwave">Microwave</option>
+            <option value="Oven">Oven</option>
           </select>
           <br><br>
         <input type="text" id="lifespan" placeholder="Lifespan in years"/>
@@ -41,3 +41,4 @@
 </div>
 </div>
 </div>
+<script src="../js/wasteStatus.js"></script>
