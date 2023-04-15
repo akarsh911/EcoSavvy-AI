@@ -60,7 +60,7 @@ body {
     height: 40px;
     width: 150px;
     margin-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .log_in_bt {
@@ -71,7 +71,7 @@ body {
     height: 40px;
     width: 150px;
     margin-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .stock_btn {
@@ -82,7 +82,7 @@ body {
     height: 40px;
     width: 150px;
     margin-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .register {
@@ -93,7 +93,7 @@ body {
     height: 40px;
     width: 150px;
     margin-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .container_yt {
@@ -118,7 +118,7 @@ h1 {
     height: 40px;
     width: 150px;
     margin-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .log_in_bt:hover {
@@ -158,10 +158,12 @@ h1 {
 .container69 {
     display: flex;
     padding-top: 10vh;
+    position: relative;
+    top: 20px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding-bottom: 0.5vh;
+    padding-bottom: 0%;
     object-fit: scale-down;
     margin-left: 0%;
     font-weight: bold;
@@ -170,7 +172,7 @@ h1 {
     align-content: normal;
     justify-content: space-between;
     align-items: center;
-    background-color: #000a61f5;
+    background-color: rgb(1, 97, 1);
     color: aliceblue;
 }
 
@@ -180,7 +182,7 @@ h1 {
 }
 
 .container69 a:hover {
-    color: #ff0000;
+    color: #ffffff;
 }
 
 
@@ -192,6 +194,30 @@ h1 {
     max-height: 100%;
     display: flex;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.link {
+    position: relative;
+    bottom: 8px;
+    display: inline-block;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3.4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+
+.link:hover::before {
+    scale: 1;
 }
 
 .right_align {
