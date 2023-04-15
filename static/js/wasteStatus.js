@@ -21,4 +21,5 @@ function check()
     {
         data6 += data6 + 'Disassemble';
     }
+    return false;
 }
