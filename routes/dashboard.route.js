@@ -15,5 +15,17 @@ router.get('/logistics', function (req, res) {
 router.get('/waste-status', function (req, res) {
     res.sendFile('static/html/wasteStatus.html', { root: process.cwd() })
 });
+router.get('/inventory-capacity', function (req, res) {
+    res.sendFile('static/html/inventoryCapacity.html', { root: process.cwd() })
+});
+router.get('/current-inventory', function (req, res) {
+    res.sendFile('static/html/currentInventory.html', { root: process.cwd() })
+});
+router.get('/components-availaible', function (req, res) {
+    res.sendFile('static/html/componentsAvailaible.html', { root: process.cwd() })
+});
+router.get('/shred-composition', function (req, res) {
+    res.sendFile('static/html/shredComposition.html', { root: process.cwd() })
+});
 //export this router to use in our index.js
 module.exports = router;
