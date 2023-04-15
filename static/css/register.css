@@ -21,7 +21,9 @@ body {
 h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 40px;
+    position: relative;
+    top: -35px;
+    left: 150px;
 }
 
 p {
@@ -48,6 +50,9 @@ a {
 button {
     border-radius: 15px;
     cursor: pointer;
+    position: relative;
+    left: 325px;
+    top: -10px;
     background-color: #000000;
     color: #FFFFFF;
     font-size: 12px;
@@ -55,11 +60,12 @@ button {
     padding: 12px 45px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
 
 button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 form {
@@ -73,23 +79,77 @@ form {
     text-align: center;
 }
 
+.hoverr {
+    border: white;
+}
+
+.hoverr:hover {
+    border: #000000;
+}
+
 .line {
     background: rgba(0, 0, 0, 0.42);
     height: 2px;
-    width: 350.5px;
+    width: 240px;
     position: relative;
-    top: -19px;
+    top: -9px;
+    left: 10px;
 }
 
-input {
+.linea {
+    background: rgba(0, 0, 0, 0.42);
+    height: 2px;
+    width: 500px;
+    position: relative;
+    bottom: 52.6px;
+    left: 141px;
+}
+
+.lineb {
+    background: rgba(0, 0, 0, 0.42);
+    height: 2px;
+    width: 240px;
+    position: relative;
+    top: -69.102px;
+    left: 270px
+}
+
+.inputa {
     background-color: #ffffff;
     box-sizing: border-box;
     border: white;
     padding: 12px 15px;
     margin: 8px 0;
+    width: 120%;
     position: relative;
-    top: -10px;
-    width: 100%;
+    left: 10px;
+    font-size: 16PX;
+}
+
+.inputb {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: white;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 52.7vh;
+    position: relative;
+    bottom: 45px;
+    left: 14.8vh;
+    font-size: 16PX;
+}
+
+.shift_name {
+    font-size: 16PX;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: white;
+    padding: 12px 15px;
+    left: 270px;
+    bottom: 59.2px;
+    position: relative;
+    margin: 8px 0px;
+    width: 120%;
 }
 
 .container {
@@ -97,10 +157,12 @@ input {
     border-radius: 10px;
     box-shadow: 0px 1px 28px rgba(0, 254, 246, 0.899), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
+    left: 10px;
     overflow: hidden;
-    width: 800px;
-    max-width: 100%;
-    min-height: 480px;
+    width: 600px;
+    max-width: 150%;
+    min-height: 700px;
+    bottom: -20px;
 }
 
 .form-container {
@@ -111,41 +173,8 @@ input {
 
 .log-in-container {
     left: 0;
-    width: 60%;
-    z-index: 2;
-}
-
-.overlay-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 50%;
-    height: 100%;
-}
-
-.overlay {
-    background: linear-gradient(to left, #9d00ff, #0085cc) 120px 190px;
-    color: #FFFFFF;
-    position: relative;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-}
-
-.overlay-panel {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    top: 0;
-    height: 100%;
-    width: 40%;
-    left: 59.5%;
-}
-
-.overlay-right {
-    right: 0;
+    z-index: 2;
 }
 
 .social-container {
